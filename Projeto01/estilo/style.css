@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android';
+    src: url('../pacote-projeto-d010/fontes/idroid.otf');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #0FC2C0;
+    --cor1: #0CABA8;
+    --cor2: #008F8C;
+    --cor3: #015958;
+    --cor4: #023535;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color:#0FC2C0;
+    font-family: var(--fonte-padrao);
+
+}
+
+main p {
+    margin: 15px 0px;
+    text-align:justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 3em;
+    margin-bottom: 20px;
+    
+}
+header > p {
+    color: white;
+    font-family: var(--fonte-destaque);
+}
+
+
+
+nav {
+    background-color: #023535;
+    padding: 10px;
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+   text-decoration: none;
+   font-weight: normal;
+}
+
+nav > a:hover {
+    background-color: #015958;
+    color: #012525;
+}
+
+main {
+
+    min-width: 300px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.575);
+}
+
+main h1, h2, h3 {
+    color: #023535;
+    font-family: var(--fonte-android);
+    font-weight: normal;
+}
+
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: #012525;
+    margin-bottom: 59px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #0CABA8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: #012525;
+    color: white;
+    text-align: center;
+    font-size: .8px;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #023535;
+}
